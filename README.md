@@ -11,8 +11,8 @@ https://code.plus/course/41
 ---
 ### 자료구조 1
 
-Q1158 - 요세푸스 (2022.02.17)
-
+[Q1158](https://github.com/geon-dev/weed/blob/6e93777896aed9fd3fed805cd2bb998ba3b9270a/src/begginer/Q1158_%EC%9A%94%EC%84%B8%ED%91%B8%EC%8A%A4.java) - [요세푸스 (2022.02.17)](https://www.acmicpc.net/problem/1158)
+>> 큐
 
 
 
