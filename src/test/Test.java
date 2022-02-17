@@ -18,9 +18,41 @@ public class Test {
 		
 //		리스트_테스트01();
 		
-		스트링토큰();
+//		스트링토큰();
+		
+		큐();
 	}
 	
+	private static void 큐() {
+		// 1 2 3 4 5 6 7
+		Queue<Integer> qq = new LinkedList<>();
+		
+		qq.add(1);
+		qq.add(2);
+		qq.add(3);
+		qq.add(4);
+		qq.add(5);
+		qq.add(6);
+		qq.add(7);
+		
+//		qq.poll(); // 앞에 꺼내기
+//		qq.remove(); // 앞에 제거
+		
+		int value1 = qq.poll();
+		int value2 = qq.poll();
+		qq.remove();
+		
+		System.out.println(qq);
+		
+		qq.add(value1);
+		qq.add(value2);
+		
+		System.out.println(qq);
+		
+		
+		
+	}
+
 	static void 스트링토큰() {
 //		String
 		
