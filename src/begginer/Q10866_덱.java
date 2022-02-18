@@ -1,4 +1,4 @@
-package test;
+package begginer;
 
 import java.util.*;
 import java.io.*;
