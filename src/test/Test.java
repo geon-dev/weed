@@ -6,6 +6,18 @@ import java.util.stream.*;
 
 public class Test {
 
+	/*
+	 * URL :
+	 * 제목 :
+	 * 
+	 * 시간 :
+	 * 
+	 * 비고 :
+	 * 
+	 * 추후 :
+	 * 
+	 */
+	
 	public static void main(String[] args) {
 		
 //		test();
@@ -20,9 +32,38 @@ public class Test {
 		
 //		스트링토큰();
 		
-		큐();
+//		큐();
+//		큐2();
+		
+		스트링빌더();
 	}
 	
+	private static void 스트링빌더() {
+		StringBuilder sb = new StringBuilder();
+		
+		System.out.println("===============");
+		
+		for(int i=0; i < 10; i++) {
+			sb.append(i).append("\n");
+		}
+		
+		System.out.println(sb);
+		
+		System.out.println("===============");
+		
+		// 마지막 개행문자 제거
+		sb.deleteCharAt(sb.lastIndexOf("\n"));
+		System.out.println(sb);
+		
+		System.out.println("===============");
+		
+	}
+
+	private static void 큐2() {
+		
+		
+	}
+
 	private static void 큐() {
 		// 1 2 3 4 5 6 7
 		Queue<Integer> qq = new LinkedList<>();
@@ -33,7 +74,7 @@ public class Test {
 		qq.add(4);
 		qq.add(5);
 		qq.add(6);
-		qq.add(7);
+		qq.add(7); // 뒤에 추가
 		
 //		qq.poll(); // 앞에 꺼내기
 //		qq.remove(); // 앞에 제거
@@ -50,7 +91,6 @@ public class Test {
 		System.out.println(qq);
 		
 		
-		
 	}
 
 	static void 스트링토큰() {
@@ -62,13 +102,21 @@ public class Test {
 	static void 리스트_테스트01() {
 		List<Integer> ll = new ArrayList<Integer>();
 		
-		ll.add(1);
-		ll.add(2);
-		ll.add(3);
+//		ll.add(0, 5);
+//		ll.add(1);
+//		ll.add(2);
+//		ll.add(3);
+		
+		System.out.println(ll.get(0));
 		
 		System.out.println(ll);
 		
-		ll.remove(0);
+		
+//		ll.remove(ll.size()-1); // 맨뒤 삭제
+		
+//		ll.remove(0); // 0번째 삭제
+		
+//		ll.add(0, 9); // 앞에 넣고 밀어내기
 		
 		System.out.println(ll);
 		

@@ -4,18 +4,18 @@ import java.util.*;
 import java.io.*;
 
 public class Q1158_요세푸스 {
-	//https://www.acmicpc.net/problem/1158
-	
-	// 16:50 > 17:32 틀림 >> 17:40
-	
-	// 1168번 요세푸스 문제 비슷한문제
-	
-	// 7 3
-	// <3, 6, 2, 7, 5, 1, 4>
-	
-	// 출력 무조건 같게하기
-	
-	// 좀더 간단히 바꾸기
+	/*
+	 * URL : https://www.acmicpc.net/problem/1158
+	 * 제목 : 조세푸스, 요세푸스
+	 * 
+	 * 시간 : 16:50 > 17:32 틀림 >> 17:40
+	 * 
+	 * 비고 : 1168번 요세푸스 문제 비슷한문제
+	 * 
+	 * 추후 : 출력 무조건 같게하기
+	 * 추후 : 좀더 간단히 바꾸기
+	 * 
+	 */
 	
 	public static void main(String[] args) throws IOException {
 		// 입력
