@@ -20,6 +20,7 @@ public class Test {
 	
 	public static void main(String[] args) {
 		
+		스택1();
 //		test();
 		
 //		스택프린트();
@@ -35,9 +36,26 @@ public class Test {
 //		큐();
 //		큐2();
 		
-		스트링빌더();
+//		스트링빌더();
 	}
 	
+	private static void 스택1() {
+		Stack<Character> st = new Stack<Character>();
+		
+		st.add('a');
+		st.add('b');
+		
+		System.out.println(st);
+		
+		System.out.println(st.pop());
+		
+		System.out.println(st.peek());
+		
+		System.out.println(st);
+		
+		
+	}
+
 	private static void 스트링빌더() {
 		StringBuilder sb = new StringBuilder();
 		
