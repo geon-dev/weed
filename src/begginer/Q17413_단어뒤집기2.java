@@ -10,7 +10,7 @@ public class Q17413_단어뒤집기2 {
 	 * 제목 : 단어 뒤집기 2
 
 	 * 
-	 * 시간 : 17:15
+	 * 시간 : 17:15 > 17:35
 	 * 
 	 * 비고 :
 	 * 
@@ -24,10 +24,12 @@ public class Q17413_단어뒤집기2 {
 		
 		// 태그 제외
 		String input11 = "<open>tag<close>";
+		// > 부터 < 까지 str[순번] 치환해서 입력
+		process01(input11);
 		
 		
 		
-		// 공백으로
+		// 공백으로 나누기
 		String input22 = "baekjoon online judge";
 		StringTokenizer stn = new StringTokenizer(input22);
 		
@@ -45,6 +47,17 @@ public class Q17413_단어뒤집기2 {
 		
 		
 		
+		
+		
+	}
+	
+	static void process01(String input) {
+		
+		for(int i=0; i < input.length(); i++) {
+			
+			
+			
+		}
 		
 		
 	}
