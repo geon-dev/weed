@@ -20,8 +20,11 @@ public class Test {
 	
 	public static void main(String[] args) {
 		
-		스택1();
-//		test();
+		
+//		스캐너();
+		
+//		스택1();
+//		split();
 		
 //		스택프린트();
 		
@@ -31,13 +34,49 @@ public class Test {
 		
 //		리스트_테스트01();
 		
+//		중복제거_리스트();
+		
 //		스트링토큰();
 		
-//		큐();
+		큐();
 //		큐2();
 		
 //		스트링빌더();
 	}
+	
+	private static void 중복제거_리스트() {
+		
+		// List 준비
+		List<String> list = Arrays.asList("A", "B", "C", "A");
+		
+		// List를 Set으로 변경
+		Set<String> set = new HashSet<String>(list);
+		
+		// Set을 List로 변경
+		List<String> newList =new ArrayList<String>(set);
+		
+		// 결과 출력
+		System.out.println(newList);
+		
+		
+		
+	}
+
+	static void 스캐너() {
+		Scanner sc = new Scanner(System.in);
+		
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+		
+		
+	}
+	
+	
 	
 	private static void 스택1() {
 		Stack<Character> st = new Stack<Character>();
@@ -86,27 +125,26 @@ public class Test {
 		// 1 2 3 4 5 6 7
 		Queue<Integer> qq = new LinkedList<>();
 		
-		qq.add(1);
+		qq.add(1);	// 뒤에 추가
 		qq.add(2);
 		qq.add(3);
 		qq.add(4);
-		qq.add(5);
-		qq.add(6);
-		qq.add(7); // 뒤에 추가
+		qq.offer(5);
+		qq.offer(6);
+		qq.offer(7); // 뒤에 추가
+
+		System.out.println(qq);
 		
-//		qq.poll(); // 앞에 꺼내기
-//		qq.remove(); // 앞에 제거
-		
-		int value1 = qq.poll();
-		int value2 = qq.poll();
-		qq.remove();
+//		int remove = qq.remove(); // 앞에 꺼내기
+//		int poll = qq.poll(); // 앞에 꺼내기
 		
 		System.out.println(qq);
 		
-		qq.add(value1);
-		qq.add(value2);
+		int element = qq.element();
+		int peek = qq.peek();
 		
-		System.out.println(qq);
+		System.out.println(element); // 최상위값
+		System.out.println(peek); // 최상위값
 		
 		
 	}
@@ -121,11 +159,11 @@ public class Test {
 		List<Integer> ll = new ArrayList<Integer>();
 		
 //		ll.add(0, 5);
-//		ll.add(1);
+		ll.add(1);
+		ll.add(1);
 //		ll.add(2);
 //		ll.add(3);
 		
-		System.out.println(ll.get(0));
 		
 		System.out.println(ll);
 		
@@ -190,7 +228,7 @@ public class Test {
 		
 	}
 
-	static void test() {
+	static void split() {
 
 		// P x
 		// return x
