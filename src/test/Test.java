@@ -38,12 +38,187 @@ public class Test {
 		
 //		스트링토큰();
 		
-		큐();
+//		큐();
 //		큐2();
 		
 //		스트링빌더();
+		
+//		StringContain();
+//		SplitText();
+		
+//		큐테스트();
+		
+//		정렬01();
+		
+//		comparatorTest();
+//		comparatorStringTest();
+		
+		compareTo();
+		
 	}
 	
+	private static void compareTo() {
+		String s1 = "caeb";
+		String s2 = "cacb";
+		
+		System.out.println(s1.compareTo(s2));
+		
+	}
+
+	private static void comparatorStringTest() {
+		List<String> S = new ArrayList<>();
+		S.add("dddddddddd");
+		S.add("dddddd");
+		S.add("dddddasdfasdfddddd");
+		S.add("ddddd");
+		
+		for(String s : S) {
+			System.out.println(s);
+		}
+		
+		System.out.println("===============");
+		// 문자 길이로 sorting
+
+		/*
+		Collections.sort(S, new Comparator<String>() {
+			public int compare(String s1, String s2) {
+				return s1.length() - s2.length();
+//				return -1;
+			}
+		});
+		*/
+		
+		Collections.sort(S, (s1, s2) -> {
+			return s1.length() - s2.length();
+		});
+		
+		
+		for(String s : S) {
+			System.out.println(s);
+		}
+		
+		
+		
+		
+	}
+
+	private static void comparatorTest() {
+		int[][] arr = new int[2][2];
+		
+		arr[0][0] = 2;
+		arr[0][1] = 1;
+		arr[1][0] = 5;
+		arr[1][1] = 6;
+		
+		System.out.println(Arrays.toString(arr[0]));
+		System.out.println(Arrays.toString(arr[1]));
+		
+		System.out.println("======================");
+		/*
+		Arrays.sort(arr, new Comparator<int[]>() {
+			public int compare(int[] e1, int[] e2) {
+				if(e1[0] == e2[0]) {
+					return e1[1] - e2[1];
+				}else {
+					return e1[0] - e2[0];
+				}
+			}
+		});
+
+		System.out.println(Arrays.toString(arr[0]));
+		System.out.println(Arrays.toString(arr[1]));
+		
+		*/
+		
+		Arrays.sort(arr, (e1, e2) -> {
+//			if(e1[0] == e2[0]) {
+//				return e2[1] - e1[1];
+//			}else {
+//				return 1;
+//			}
+			return -1;
+		});
+		
+
+		System.out.println("======================");
+
+		System.out.println(Arrays.toString(arr[0]));
+		System.out.println(Arrays.toString(arr[1]));
+		
+	}
+
+	private static void 정렬01() {
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+	private static void 큐테스트() {
+		String[] q = new String[3];
+		q[0] = "im";
+		q[1] = "no";
+		q[2] = "it";
+		
+//		System.out.println(Arrays.toString(q));
+		// Arrays.sort(q.toArray())
+
+//		Arrays.sort(q);
+		
+//		System.out.println(Arrays.toString(q));
+		
+		
+		String[] S = {};
+		S[0] = new String("d");
+		System.out.println(S);
+		
+	}
+
+	private static void SplitText() {
+		String query = "임수택||d|입니다";
+//		String query = "-ㅇ";
+		
+//		String[] query_arr = query.split("[|()\\[\\]]+-*;&|\\s+");
+//		String[] query_arr = query.split("[|()\\[\\]]+|-*;&|\\s+");
+//		String[] query_arr = query.split("[|()\\[\\]]+-*;&");
+		
+		
+//		System.out.println(Arrays.toString(query_arr));
+		System.out.println(query.indexOf("-"));
+		
+		System.out.println(query.substring(1));
+	}
+
+	private static void StringContain() {
+		String test = "(천관||영||토론)";
+		
+//		boolean a = test.contains("|");
+//		System.out.println(a);
+		
+//		String[] split1 = test.split("\\|");
+		
+//		System.out.println(Arrays.toString(split1));
+		
+//		System.out.println(test.indexOf("|"));
+		char ch = '|';
+		
+		int count = 0;
+		String str = test;
+		
+		for (int i = 0; i < str.length(); i++) {
+			if (str.charAt(i) == ch) {
+				count++;
+			}
+		}
+
+		System.out.println(count);
+		
+	}
+
 	private static void 중복제거_리스트() {
 		
 		// List 준비
