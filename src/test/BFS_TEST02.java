@@ -19,6 +19,7 @@ public class BFS_TEST02 {
 		// 1.인접 리스트로 표현
 		LinkedList<Integer>[] adjList = new LinkedList[n + 1];
 		
+		// 리스트 선언
 		for(int i=0; i <= n; i++) {
 			adjList[i] = new LinkedList<Integer>();
 		}
@@ -31,6 +32,7 @@ public class BFS_TEST02 {
 			adjList[v2].add(v1);
 		}
 		
+		// 정렬
 		for(int i=1; i <= n; i++) {
 			Collections.sort(adjList[i]);
 		}

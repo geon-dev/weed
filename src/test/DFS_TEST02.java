@@ -28,17 +28,46 @@ public class DFS_TEST02 {
 		LinkedList<Integer>[] adjList = new LinkedList[n+1];
 		
 		// 방문 체크
+		boolean[] visitied = new boolean[n+1];
 		
 		// 정점 개수만큼 선언
+		for(int i=0; i <= n; i++) {
+			adjList[i] = new LinkedList<Integer>();
+		}
+		
 		// 간선
+		for(int i=0; i < m; i++) {
+			int v1 = sc.nextInt();
+			int v2 = sc.nextInt();
+			
+			adjList[v1].add(v2);
+			adjList[v2].add(v1);
+		}
+		
 		// 방문 순서를 위한 오름차순
+		for(int i=0; i <= n; i++) {
+			Collections.sort(adjList[i]);
+		}
 
 		//인접확인
+		dfs(adjList, visitied, v);
 		
 		
 		
 	}
 	
+	static void dfs(LinkedList<Integer>[] adjList, boolean[] visitied, int v) {
+		visitied[v] = true;
+		
+		System.out.print(v + " > ");
+		
+		for(int node : adjList[v]) {
+			if(!visitied[node]) {
+				dfs(adjList, visitied, node);
+			}
+		}
+		
+	}
 	
 	
 	
