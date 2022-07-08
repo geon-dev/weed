@@ -53,10 +53,31 @@ public class Test {
 //		comparatorTest();
 //		comparatorStringTest();
 		
-		compareTo();
+//		compareTo();
+		
+		lkatjdslk();
 		
 	}
 	
+	private static void lkatjdslk() {
+		// 1~10 각자 전체 곱하기
+		
+		func(0);
+		
+		System.out.println("============");
+		
+		func(1);
+		
+	}
+
+	private static void func(int i) {
+		System.out.println(i);
+		
+		if(i < 10) {
+			func(i+1);
+		}
+	}
+
 	private static void compareTo() {
 		String s1 = "caeb";
 		String s2 = "cacb";
