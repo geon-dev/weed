@@ -55,10 +55,26 @@ public class Test {
 		
 //		compareTo();
 		
-		lkatjdslk();
+//		lkatjdslk();
+		
+		랜덤수출력();
 		
 	}
 	
+	private static void 랜덤수출력() {
+		//N(1 ≤ N ≤ 10,000,000)
+		// 10000보다 작은수
+//        System.out.println( + (int)((Math.random()*10000)%10));
+//        System.out.println((int)(Math.random()*100));
+        
+        
+        for(int i=0; i < 1000000; i++) {
+        	int rr = (int)(Math.random()*10000);
+        	System.out.println(rr);
+        }
+		
+	}
+
 	private static void lkatjdslk() {
 		// 1~10 각자 전체 곱하기
 		
