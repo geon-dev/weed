@@ -18,6 +18,8 @@ public class Q2606 {
 4 7
 	
  */
+	static int cnt = 0;
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
@@ -43,13 +45,14 @@ public class Q2606 {
 		
 		//dfs
 		dfs(v, arr, check);
+		System.out.println(cnt-1);
 	}
 
 	private static void dfs(int v, int[][] arr, boolean[] check) {
 		//방문 체크
 		check[v] = true;
-
-		System.out.println(v + " > ");
+		cnt++;
+//		System.out.println(v + " > ");
 		
 		//아니면 dfs
 		for(int i=1; i <= arr[v].length-1; i++) {

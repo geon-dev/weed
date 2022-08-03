@@ -21,7 +21,7 @@ public class Q10989 {
 		
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
-		int N = 10000000;
+		int N = 100000;
 		int[] arr = new int[N];
         
 		for(int i=0; i < N; i++) {

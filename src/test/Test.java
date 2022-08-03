@@ -41,6 +41,8 @@ public class Test {
 //		큐();
 //		큐2();
 		
+//		PriorityQueue22();
+		
 //		스트링빌더();
 		
 //		StringContain();
@@ -57,10 +59,37 @@ public class Test {
 		
 //		lkatjdslk();
 		
-		랜덤수출력();
+//		랜덤수출력();
+		
+		tasdkljf();
+		
 		
 	}
 	
+	private static void tasdkljf() {
+		//1 B
+		String s = "1 d";
+		
+		System.out.println(s.split(" ").length);
+		
+	}
+
+	private static void PriorityQueue22() {
+
+		PriorityQueue<Integer> qq = new PriorityQueue<>();
+		
+		qq.add(11);
+		qq.add(2);
+		qq.add(10);
+		qq.add(9);
+		qq.add(14);
+		qq.add(9);
+		
+		System.out.println(qq);
+		
+		
+	}
+
 	private static void 랜덤수출력() {
 		//N(1 ≤ N ≤ 10,000,000)
 		// 10000보다 작은수
@@ -95,8 +124,8 @@ public class Test {
 	}
 
 	private static void compareTo() {
-		String s1 = "caeb";
-		String s2 = "cacb";
+		String s1 = "c";
+		String s2 = "b";
 		
 		System.out.println(s1.compareTo(s2));
 		
@@ -347,16 +376,16 @@ public class Test {
 
 		System.out.println(qq);
 		
-//		int remove = qq.remove(); // 앞에 꺼내기
-//		int poll = qq.poll(); // 앞에 꺼내기
+//		int remove = qq.remove(); // 먼저 입력한 값  꺼내기
+		int poll = qq.poll(); // 먼저 입력한 값 꺼내기
 		
 		System.out.println(qq);
 		
-		int element = qq.element();
+		int element = qq.element(); // 먼저 입력한 값
 		int peek = qq.peek();
 		
-		System.out.println(element); // 최상위값
-		System.out.println(peek); // 최상위값
+		System.out.println(element);
+		System.out.println(peek);
 		
 		
 	}
