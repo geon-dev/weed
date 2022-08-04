@@ -72,6 +72,8 @@ public class Test {
 		
 		System.out.println(s.split(" ").length);
 		
+		System.out.println((int)' ');
+		
 	}
 
 	private static void PriorityQueue22() {
