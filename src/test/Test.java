@@ -20,7 +20,8 @@ public class Test {
 	
 	public static void main(String[] args) {
 		
-		
+		쁠쁠();
+//		깊은();
 //		스캐너();
 		
 //		스택1();
@@ -61,11 +62,39 @@ public class Test {
 		
 //		랜덤수출력();
 		
-		tasdkljf();
+//		tasdkljf();
 		
 		
 	}
 	
+	private static void 쁠쁠() {
+		int N = 112;
+		System.out.println(++N);
+		
+		System.out.println(N);
+	}
+
+	private static void 깊은() {
+
+		int N = 8;
+		int M = 8;
+		
+		char[][] CC = new char[N][M];
+		char[][] cc = new char[N][M];
+		
+		CC[0][0] = 'A';
+		cc = CC.clone();
+		
+		System.out.println(CC[0][0]);
+		System.out.println(cc[0][0]);
+		
+		CC[0][0] = 'B';
+		System.out.println();
+		System.out.println(CC[0][0]);
+		System.out.println(cc[0][0]);
+		
+	}
+
 	private static void tasdkljf() {
 		//1 B
 		String s = "1 d";
