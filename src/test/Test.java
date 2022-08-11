@@ -1,6 +1,7 @@
 package test;
 
 import java.io.*;
+import java.math.BigInteger;
 import java.util.*;
 import java.util.stream.*;
 
@@ -20,7 +21,8 @@ public class Test {
 	
 	public static void main(String[] args) {
 		
-		쁠쁠();
+		bigint();
+//		쁠쁠();
 //		깊은();
 //		스캐너();
 		
@@ -67,6 +69,15 @@ public class Test {
 		
 	}
 	
+	private static void bigint() {
+		
+		BigInteger[] bi = new BigInteger[1];
+		
+		
+		
+		
+	}
+
 	private static void 쁠쁠() {
 		int N = 112;
 		System.out.println(++N);
