@@ -21,7 +21,10 @@ public class Test {
 	
 	public static void main(String[] args) {
 		
-		bigint();
+		test123();
+//		collectionsFn();
+//		배열입력값();
+//		bigint();
 //		쁠쁠();
 //		깊은();
 //		스캐너();
@@ -69,6 +72,74 @@ public class Test {
 		
 	}
 	
+	private static void test123() {
+		Set<Integer> st = new HashSet<>();
+		
+		st.add(3);
+		st.add(4);
+		st.add(2);
+		
+		
+		int v = 2;
+		
+		switch(v) {
+			case 3:
+				System.out.println(2);
+				break;
+			case 2:
+				System.out.println(5);
+				break;
+		}
+		
+		
+		
+	}
+
+	private static void collectionsFn() {
+		
+		
+		List<Integer> ll = new ArrayList<>();
+		ll.add(1);
+		ll.add(5);
+		ll.add(2);
+		ll.add(7);
+		
+		int v = Collections.min(ll);
+		
+		
+		String s1 = "boin";
+		String s2 = "cwgroi";
+		
+		System.out.println(s1.compareTo(s2));
+		
+	}
+
+	private static void 배열입력값() {
+		// [2, 3, 1, 5]
+		
+		Random rm = new Random();
+		
+		int v = rm.nextInt(10);
+		
+		
+		// 1..1000+1 range의 배열 값은 다른값
+		int N = 100;
+		int[] arr = new int[N+1];
+		// 1~ 10001 1000없음
+		
+		String str = "";
+		str += "[";
+		for(int i=1; i <= N; i++) {
+			str += i + ", ";
+		}
+		
+		str += "]";
+		
+		System.out.println(str);
+		
+		
+	}
+
 	private static void bigint() {
 		
 		BigInteger[] bi = new BigInteger[1];

@@ -24,28 +24,8 @@ X가 2로 나누어 떨어지면, 2로 나눈다.
 		
 		// 3*x + 2*y + z = N
 		
-		int temp = N;
-		int cnt = 0;
-		
-		int x = N/3;
-		int y = N/2;
-		int z = N;
 		
 			
-		for(int i=0; i <= x; i++) {
-			
-			for(int p=0; p <= y; p++) {
-				
-				for(int q=0; q <= z; q++) {
-					
-					
-					
-					
-					
-					
-				}
-			}
-		}
 			
 			
 			
