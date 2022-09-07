@@ -21,7 +21,9 @@ public class Test {
 	
 	public static void main(String[] args) {
 		
-		test123();
+		lkasjdflksa();
+//		asldfjl();
+//		test123();
 //		collectionsFn();
 //		배열입력값();
 //		bigint();
@@ -72,6 +74,44 @@ public class Test {
 		
 	}
 	
+	private static void lkasjdflksa() {
+		
+		List<String> list = new ArrayList<>();
+		list.add("1");
+		list.add("1");
+		list.add("1");
+		list.add("1");
+		
+		String[] arr = list.toArray(new String[list.size()]);
+		
+		System.out.println(Arrays.toString(arr));
+		
+	}
+
+	private static void asldfjl() {
+		
+		Map<String, Double> mm = new HashMap<>();
+		mm.put("a", (double)10);
+		mm.put("c", (double)20);
+		mm.put("b", (double)30);
+		
+		System.out.println(mm);
+		
+        List<String> keySet = new ArrayList<>(mm.keySet());
+        keySet.sort(new Comparator<String>() {
+        	public int compare(String o1, String o2) {
+        		return mm.get(o2).compareTo(mm.get(o1));
+        	}
+        });
+        
+        for(String key : keySet) {
+        	System.out.println(key + "/" + mm.get(key));
+        }
+		
+		
+		
+	}
+
 	private static void test123() {
 		Set<Integer> st = new HashSet<>();
 		
